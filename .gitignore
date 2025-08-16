@@ -1,0 +1,127 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build
+dist/
+dist-ssr/
+build/
+
+# Development
+.vite/
+.cache/
+.temp/
+*.tmp
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and testing
+coverage/
+*.lcov
+.nyc_output/
+/cypress/videos/
+/cypress/screenshots/
+
+# TypeScript
+*.tsbuildinfo
+.tscache/
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editors and IDEs
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local development
+*.local
+.history/
+
+# Package managers
+.npm/
+.eslintcache
+.yarn/
+.pnp/
+yarn-error.log
+pnpm-debug.log*
+pnpm-error.log*
+
+# Runtime
+.vercel/
+.netlify/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Application specific
+# Ollama models cache and data
+models/
+*.gguf
+*.ggml
+*.bin
+
+# User data and settings
+user-settings.json
+conversations.json
+agent-configs/
+chat-history/
+model-cache/
+
+# Security
+.env.example
+.env.*.example
+secrets/
+api-keys.json
+
+# Development tools
+.devcontainer/
+.gitpod.yml
+.replit
+.stackblitz
+
+# Performance profiling
+profile/
+*.prof
+*.heapprofile
+*.cpuprofile

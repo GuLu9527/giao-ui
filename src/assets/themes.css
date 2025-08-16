@@ -1,0 +1,113 @@
+/* 浅色主题 (默认) */
+:root,
+[data-theme="light"] {
+  /* 主色调 */
+  --primary-black: #1a1a1a;
+  --primary-white: #ffffff;
+  
+  /* 灰色色阶 */
+  --gray-25: #fcfcfc;
+  --gray-50: #f9f9f9;
+  --gray-100: #f0f0f0;
+  --gray-200: #e4e4e4;
+  --gray-300: #d1d1d1;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
+  
+  /* 功能色 */
+  --accent-blue: #007aff;
+  --success-green: #34c759;
+  --warning-orange: #ff9500;
+  --error-red: #ff3b30;
+  
+  /* 阴影 */
+  --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-large: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xlarge: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 深色主题 */
+[data-theme="dark"] {
+  /* 主色调 */
+  --primary-black: #ffffff;
+  --primary-white: #1a1a1a;
+  
+  /* 灰色色阶 (深色主题下颜色反转) */
+  --gray-25: #171717;
+  --gray-50: #262626;
+  --gray-100: #404040;
+  --gray-200: #525252;
+  --gray-300: #737373;
+  --gray-400: #a3a3a3;
+  --gray-500: #d1d1d1;
+  --gray-600: #e4e4e4;
+  --gray-700: #f0f0f0;
+  --gray-800: #f9f9f9;
+  --gray-900: #fcfcfc;
+  
+  /* 功能色 (深色主题下稍微调整亮度) */
+  --accent-blue: #0a84ff;
+  --success-green: #32d74b;
+  --warning-orange: #ff9f0a;
+  --error-red: #ff453a;
+  
+  /* 阴影 (深色主题下使用白色阴影) */
+  --shadow-small: 0 1px 3px rgba(255, 255, 255, 0.1);
+  --shadow-medium: 0 4px 6px rgba(255, 255, 255, 0.1);
+  --shadow-large: 0 10px 15px rgba(255, 255, 255, 0.1);
+  --shadow-xlarge: 0 20px 25px rgba(255, 255, 255, 0.15);
+}
+
+/* 主题过渡动画 */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* 深色主题特殊样式 */
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] body {
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+}
+
+/* 滚动条样式 */
+[data-theme="dark"] ::-webkit-scrollbar {
+  background-color: var(--gray-100);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: var(--gray-300);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-400);
+}
+
+/* 选择文本样式 */
+[data-theme="dark"] ::selection {
+  background-color: var(--accent-blue);
+  color: var(--primary-white);
+}
+
+/* 思考内容深色主题样式 */
+[data-theme="dark"] .thinking-section {
+  background: rgba(139, 69, 19, 0.1);
+  border-color: var(--gray-200);
+}
+
+[data-theme="dark"] .thinking-header:hover {
+  background: rgba(139, 69, 19, 0.15);
+}
+
+[data-theme="dark"] .thinking-content {
+  background: rgba(139, 69, 19, 0.05);
+  border-color: var(--gray-200);
+}
